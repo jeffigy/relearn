@@ -1,14 +1,17 @@
 import React from 'react'
 import Body from './Body'
 import { Greet } from 'components/learning/Greet'
-function layout() {
+import { Message } from 'components/learning/Message'
+function Layout() {
+    const name = 'Doe'
     return (
         <>
             <Body>
-                <Greet />
+                {/* <Greet /> */}
+                <Message name={name} />
             </Body>
         </>
     )
 }
 
-export default layout
+export default Layout
